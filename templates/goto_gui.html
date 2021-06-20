@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>GOTO Webinar Launcher</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/goto_gui.css') }}">
+</head>
+<body>
+    <form action="{{url_for("form_data")}}" class="decor" method="post">
+        <div class="form-left-decoration"></div>
+        <div class="form-right-decoration"></div>
+        <div class="circle"></div>
+        <div class="form-inner">
+            <h1>GOTO Registration Details</h1>
+            <input type="text" placeholder="First Name" name="fname" required >
+            <input type="text" placeholder="Last Name" name="lname" required >
+            <input type="email" placeholder="Email" name="email" required >
+            <input type="text" placeholder="Webinar Url" name="webinar_url" required >
+            <input type="text" placeholder="Time to join in HH:MM:SS format" name="time_to_join" required >
+            <input type="text" placeholder="1st Custom Question if any" name="custque0"  >
+            <input type="text" placeholder="2nd Custom Question if any" name="custque1"  >
+            <button type="submit"  >Submit</button>
+            <h3 name="countdown"></h3>
+        </div>
+    </form>
+</body>
+</html>
