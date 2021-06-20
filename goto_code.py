@@ -44,7 +44,6 @@ def form_data():
                 launch_time3 = datetime.strptime(launch_time, "%H:%M:%S")
                 current_time3 = datetime.strptime(datetime.now().strftime("%H:%M:%S"), "%H:%M:%S")
                 time_remaining = launch_time3 - current_time3
-                # print(time_remaining)
                 Hr = int(time_remaining.seconds // 3600)
                 Min = int(time_remaining.seconds % 3600 / 60.0)
                 Sec = int(time_remaining.seconds % 60.0)
