@@ -119,7 +119,7 @@ def form_data():
                 driver.switch_to.window(driver.window_handles[0])
                 driver.implicitly_wait(1)
                 driver.close()
-                print("Webinar is ended....")
+                print("Webinar is ended.")
         return render_template("goto_gui.html", fname=form_data.fname)
     return render_template("goto_gui.html")
 
